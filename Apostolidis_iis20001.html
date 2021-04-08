@@ -1,12 +1,11 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
-
   <title>iis20001</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
+  <meta name="description" content="Internet Programming Assignment">
 
   <link rel="stylesheet" href="styles.css">
   <style>
@@ -15,58 +14,66 @@
 
 <body>
 
-  
-  <p id="par">Choose a color
-    <br>
-    <select name="cars" id="cars" multiple>
-      <option value="Red">Red</option>
-      <option value="Silver">Silver</option>
-      <option value="White">White</option>
-      <option value="Black">Black</option>
-    </select>
-  </p>
+  <div class="header">
+    <h1>George David Apostolidis | iis20001</h1>
+    <p>Configure your GT Super Sportscar</p>
+  </div>
 
-  <p id="par">Configuration
+  <div class="content">
+    <p id="par">Choose a color
       <br>
-      <input type="radio" name="gtmanual" value="gtmanual" /> GT-Manual
-      <br>
-      <input type="radio" name="gtauto" value="gtauto" /> GT Automatic
-      <br>
-      <input type="radio" name="gtsmanual" value="gtsmanual" /> GT-S Manual
-      <br>
-      <input type="radio" name="gtssport" value="gtssport" /> GT-S Sportshift
-      <br>
-  </p>
+      <select name="cars" id="selectCar" multiple>
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Silver">Silver</option>
+        <option value="White">White</option>
+        <option value="Black">Black</option>
+      </select>
+      <img src="bluecar.jpg" width="100" height="100" style="float: right;">
+    </p>
 
-  <p id="par">Factory Options
-    <br>
-    <input type="radio" name="option1" value="option1" /> Option Combo #1
-    <span class=li>Power Windows, Doors, Cruise Control</span>
-    <input type="radio" name="option2" value="option2" /> Option Combo #2
-    <span class=li>Rear Spoiler and Fog Lamps</span>
-    <span class=li>Keyless Entry</span>
-    <span class=li>Power Tilt & Side Moonroof</span>
-    <span class=li>Power Windows, Doors, </span>
-    <input type="radio" name="option3" value="option3" /> No Combo 
-
-  </p>
-
-  <p id="par">Dealer Options
+    <p id="par">Configuration
       <br>
-      <input type="checkbox" name="stereo" value="stereo" /> Upgraded Stereo System
+      <input type="radio" name="Configuration" value="gtmanual" /> GT-Manual
       <br>
-      <input type="checkbox" name="security" value="security" /> VIP Security System
+      <input type="radio" name="Configuration" value="gtauto" /> GT Automatic
       <br>
-      <input type="checkbox" name="mirror" value="mirror" /> Audio-Dimming Mirror
+      <input type="radio" name="Configuration" value="gtsmanual" /> GT-S Manual
       <br>
-  </p>
+      <input type="radio" name="Configuration" value="gtssport" /> GT-S Sportshift
+      <br>
+    </p>
 
-  <p id="par">
-    <button type="button">Total Price</button>
-    <textarea id="textarea" name="textarea" rows="1" cols="50"></textarea>
-  </p>
+    <p id="par">Factory Options
+      <br>
+      <input type="radio" name="Factory" value="option1" /> Option Combo #1
+      <span class="li">Power Windows, Doors, Cruise Control</span>
+      <input type="radio" name="Factory" value="option2" /> Option Combo #2
+      <span class="li">Rear Spoiler and Fog Lamps</span>
+      <span class="li">Keyless Entry</span>
+      <span class="li">Power Tilt & Side Moonroof</span>
+      <span class="li">Power Windows, Doors, </span>
+      <input type="radio" name="Factory" value="option3" /> No Combo
 
+    </p>
+
+    <p id="par">Dealer Options
+      <br>
+      <input type="checkbox" name="Dealer" value="stereo" /> Upgraded Stereo System 
+      <br>
+      <input type="checkbox" name="Dealer" value="security" /> VIP Security System 
+      <br>
+      <input type="checkbox" name="Dealer" value="mirror" /> Audio-Dimming Mirror 
+      <br>
+    </p>
+
+    <p id="par">
+      <button type="button">Total Price</button>
+      <textarea id="textarea" name="textarea" rows="1" cols="50"></textarea>
+    </p>
+  </div>
   <script src="scripts.js"></script>
 
 </body>
+
 </html>
