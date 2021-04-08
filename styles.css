@@ -1,0 +1,10 @@
+#par {
+    padding: 15px;
+    border: 2px double;
+    width: 400px;
+}
+
+span.li {
+    display: list-item;
+    margin-left: 2em;
+}

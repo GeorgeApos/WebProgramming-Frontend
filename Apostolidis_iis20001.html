@@ -8,18 +8,14 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="stylesheet" href="styles.css">
   <style>
-    #par {
-      padding: 15px;
-      border: 2px solid;
-      width: 400px;
-    }
   </style>
 </head>
 
 <body>
 
+  
   <p id="par">Choose a color
     <br>
     <select name="cars" id="cars" multiple>
@@ -31,31 +27,46 @@
   </p>
 
   <p id="par">Configuration
-    <form action="" method="post">
-      <input type="radio" name="joke" value="gtmanual" /> GT-Manual
       <br>
-      <input type="radio" name="joke" value="gtauto" /> GT Automatic
+      <input type="radio" name="gtmanual" value="gtmanual" /> GT-Manual
       <br>
-      <input type="radio" name="joke" value="gtsmanual" /> GT-S Manual
+      <input type="radio" name="gtauto" value="gtauto" /> GT Automatic
       <br>
-      <input type="radio" name="joke" value="gtssport" /> GT-S Sportshift
+      <input type="radio" name="gtsmanual" value="gtsmanual" /> GT-S Manual
       <br>
-    </form>
+      <input type="radio" name="gtssport" value="gtssport" /> GT-S Sportshift
+      <br>
   </p>
 
   <p id="par">Factory Options
-    
+    <br>
+    <input type="radio" name="option1" value="option1" /> Option Combo #1
+    <span class=li>Power Windows, Doors, Cruise Control</span>
+    <input type="radio" name="option2" value="option2" /> Option Combo #2
+    <span class=li>Rear Spoiler and Fog Lamps</span>
+    <span class=li>Keyless Entry</span>
+    <span class=li>Power Tilt & Side Moonroof</span>
+    <span class=li>Power Windows, Doors, </span>
+    <input type="radio" name="option3" value="option3" /> No Combo 
+
   </p>
 
   <p id="par">Dealer Options
-    
+      <br>
+      <input type="checkbox" name="stereo" value="stereo" /> Upgraded Stereo System
+      <br>
+      <input type="checkbox" name="security" value="security" /> VIP Security System
+      <br>
+      <input type="checkbox" name="mirror" value="mirror" /> Audio-Dimming Mirror
+      <br>
   </p>
 
-  <p id="par">Total Price
-    
+  <p id="par">
+    <button type="button">Total Price</button>
+    <textarea id="textarea" name="textarea" rows="1" cols="50"></textarea>
   </p>
 
-  <script src="js/scripts.js"></script>
+  <script src="scripts.js"></script>
 
 </body>
 </html>
