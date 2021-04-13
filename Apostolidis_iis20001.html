@@ -22,15 +22,27 @@
   <div class="content">
     <p id="par">Choose a color
       <br>
-      <select name="cars" id="selectCar" multiple>
+      <script>
+        var colorUrlMap = {
+          "Black": "blackcar.jpg",
+          "Blue": "bluecar.jpg",
+          "Red": "redcar.jpg",
+          "White": "whitecar.jpg",
+          "Yellow": "yellowcar.jpg"
+        };
+      </script>
+      <select name="cars" onchange="document.getElementById('myimage').src = colorUrlMap[this.value];" id="selectCar"
+        multiple>
         <option value="Red">Red</option>
         <option value="Blue">Blue</option>
         <option value="Yellow">Yellow</option>
         <option value="White">White</option>
         <option value="Black">Black</option>
       </select>
-      <img src="bluecar.jpg" width="200" height="100" style="float: right;">
+      <img src="bluecar.jpg" id="myimage" width="200" height="100" style="float: right;">
     </p>
+
+
 
     <p id="par">Configuration
       <br>
@@ -59,11 +71,11 @@
 
     <p id="par">Dealer Options
       <br>
-      <input type="checkbox" name="Dealer" value="stereo" /> Upgraded Stereo System 
+      <input type="checkbox" name="Dealer" value="stereo" /> Upgraded Stereo System
       <br>
-      <input type="checkbox" name="Dealer" value="security" /> VIP Security System 
+      <input type="checkbox" name="Dealer" value="security" /> VIP Security System
       <br>
-      <input type="checkbox" name="Dealer" value="mirror" /> Audio-Dimming Mirror 
+      <input type="checkbox" name="Dealer" value="mirror" /> Audio-Dimming Mirror
       <br>
     </p>
 
