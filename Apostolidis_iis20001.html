@@ -20,6 +20,7 @@
   </div>
 
   <div class="content">
+
     <p id="par">Choose a color
       <br>
       <script>
@@ -39,7 +40,7 @@
         <option value="White">White</option>
         <option value="Black">Black</option>
       </select>
-      <img src="bluecar.jpg" id="myimage" width="200" height="100" style="float: right;">
+      <img src="bluecar.jpg" id="myimage" width="150" height="80" style="float: right;">
     </p>
 
 
@@ -47,41 +48,51 @@
     <p id="par">Configuration
       <br>
       <input type="radio" name="Configuration" value="gtmanual" /> GT-Manual
+      <span style="float:right;text-align: right;">17,790.00$</span>
       <br>
       <input type="radio" name="Configuration" value="gtauto" /> GT Automatic
+      <span style="float:right;text-align: right;">18,590.00$</span>
       <br>
       <input type="radio" name="Configuration" value="gtsmanual" /> GT-S Manual
+      <span style="float:right;text-align: right;">22,455.00$</span>
       <br>
       <input type="radio" name="Configuration" value="gtssport" /> GT-S Sportshift
+      <span style="float:right;text-align: right;">23,155.00$</span>
       <br>
     </p>
 
     <p id="par">Factory Options
       <br>
       <input type="radio" name="Factory" value="option1" /> Option Combo #1
+      <span style="float:right;text-align: right;">1235.00$</span>
       <span class="li">Power Windows, Doors, Cruise Control</span>
       <input type="radio" name="Factory" value="option2" /> Option Combo #2
+      <span style="float:right;text-align: right;">3354.00$</span>
       <span class="li">Rear Spoiler and Fog Lamps</span>
       <span class="li">Keyless Entry</span>
       <span class="li">Power Tilt & Side Moonroof</span>
       <span class="li">Power Windows, Doors, </span>
       <input type="radio" name="Factory" value="option3" /> No Combo
+      <span style="float:right;text-align: right;">0$</span>
 
     </p>
 
     <p id="par">Dealer Options
       <br>
       <input type="checkbox" name="Dealer" value="stereo" /> Upgraded Stereo System
+      <span style="float:right;text-align: right;">550.00$</span>
       <br>
       <input type="checkbox" name="Dealer" value="security" /> VIP Security System
+      <span style="float:right;text-align: right;">399.00$</span>
       <br>
       <input type="checkbox" name="Dealer" value="mirror" /> Audio-Dimming Mirror
+      <span style="float:right;text-align: right;">295.00$</span>
       <br>
     </p>
 
     <p id="par">
       <button type="button">Total Price</button>
-      <textarea id="textarea" name="textarea" rows="1" cols="50"></textarea>
+      <span id='result'></span>
     </p>
   </div>
   <script src="scripts.js"></script>
