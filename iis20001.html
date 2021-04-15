@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="stylesheet" href="iis20001.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>George - David Apostolidis | iis20001</h1>
+        <h3> Configure your GT Super Sportscar</h3>
+    </div>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <h1 id="hlist">Top 5 best sports cars 2021</h1>
+            <ul>
+                <li>Porsche 911</li>
+                <li>Jaguar F-Type</li>
+                <li>Porsche 718 Cayman</li>
+                <li>Mercedes-AMG GT</li>
+                <li>Chevrolet Corvette C8</li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-s-9">
+            <div class="par1">
+
+                <h1 id="hcolor">Choose a color</h1>
+                <script>
+                    var colorUrlMap = {
+                        "Black": "black.png",
+                        "White": "white.png",
+                        "Blue": "blue.png",
+                        "Red": "red.png",
+                        "Yellow": "yellow.png"
+                    };
+                </script>
+                <p id="pcolor">
+                    <select id="cars" name="cars"
+                        onchange="document.getElementById('colourimg').src = colorUrlMap[this.value];" size="5"
+                        multiple>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Red">Red</option>
+                        <option value="Yellow">Yellow</option>
+                    </select>
+                    <img id="colourimg" src="black.png">
+                </p>
+
+                <h1 id="hcolor">Factory Option</h1>
+                <p id="pcolor">
+                    <input type="radio" id="huey" name="drone" value="huey">
+                    <label for="huey">Huey</label>
+                    <br>
+                    <input type="radio" id="huey" name="drone" value="huey">
+                    <label for="huey">Huey</label>
+                    <br>
+                    <input type="radio" id="huey" name="drone" value="huey">
+                    <label for="huey">Huey</label>
+                    <br>
+                </p>
+
+            </div>
+        </div>
+
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h2>What?</h2>
+                <p>Chania is a city on the island of Crete.</p>
+                <h2>Where?</h2>
+                <p>Crete is a Greek island in the Mediterranean Sea.</p>
+                <h2>How?</h2>
+                <p>You can reach Chania airport from all over Europe.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Course : Internet Programming (Front-End)
+            <br>
+            Semester : 4th
+        </p>
+    </div>
+    <script src="iis20001.js"></script>
+</body>
+
+</html>
