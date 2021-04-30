@@ -87,6 +87,8 @@
     cursor: pointer;
   }
   
+  SPAN.li  {display: list-item; margin-left: 2em}
+
   .aside {
     background-color: #112a33;
     padding: 15px;
